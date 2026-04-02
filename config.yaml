@@ -1,0 +1,53 @@
+# Edge-IDS 配置文件
+# 根据您的环境修改以下配置
+
+# 系统配置
+system:
+  name: "Edge-IDS"
+  version: "1.0.0"
+
+# 数据包捕获配置
+capture:
+  interface: "auto"        # 网络接口名称
+  bpf_filter: "ip"         # BPF过滤表达式
+  buffer_size: 65536       # 缓冲区大小
+  promiscuous: true        # 是否启用混杂模式
+  queue_size: 10000        # 内部队列大小
+
+# 特征提取配置
+features:
+  flow_timeout: 120.0      # 流超时时间（秒）
+  max_flows: 10000         # 最大活跃流数
+  feature_dim: 39          # 特征维度
+  packet_history_size: 1000
+  iat_history_size: 100
+
+# 模型配置
+model:
+  input_dim: 39            # 输入特征维度
+  num_classes: 2           # 输出类别数
+  num_channels: [128, 256] # TCN通道数
+  kernel_size: 3           # 卷积核大小
+  dropout: 0.2             # Dropout概率
+  model_path: "data/models/tcn_model_3.0.pth"  # 模型文件路径
+
+# 推理配置
+inference:
+  confidence_threshold: 0.5  # 置信度阈值
+  alert_threshold: 0.8       # 告警阈值
+  sequence_length: 20        # 序列长度
+  batch_size: 64             # 批大小
+  buffer_size: 100           # 统计缓冲区大小
+
+# Web服务器配置
+web:
+  host: "0.0.0.0"          # 监听地址
+  port: 8080               # 端口号
+  debug: false             # 调试模式
+
+# 日志配置
+logging:
+  level: "INFO"            # 日志级别（DEBUG, INFO, WARNING, ERROR）
+  log_dir: "logs"          # 日志目录
+  max_bytes: 10485760      # 单个日志文件最大字节数（10MB）
+  backup_count: 5          # 备份文件数量

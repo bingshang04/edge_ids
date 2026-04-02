@@ -1,0 +1,47 @@
+# Edge-IDS 树莓派版本配置文件
+# 针对ARM架构的轻量级配置
+
+system:
+  name: "Edge-IDS-Pi"
+  version: "1.0.0"
+
+capture:
+  interface: "eth0"
+  bpf_filter: "ip"
+  buffer_size: 32768
+  promiscuous: true
+  queue_size: 5000  # 减少内存占用
+
+features:
+  flow_timeout: 120.0
+  max_flows: 5000   # 减少内存占用
+  feature_dim: 39
+  packet_history_size: 500
+  iat_history_size: 50
+
+model:
+  input_dim: 39
+  num_classes: 2
+  num_channels: [64, 128]  # 轻量级网络
+  kernel_size: 3
+  dropout: 0.2
+  model_path: "data/models/tcn_model_3.0.pth"
+
+inference:
+  confidence_threshold: 0.5
+  alert_threshold: 0.8
+  sequence_length: 10  # 较短的序列
+  batch_size: 16       # 较小的批大小
+  buffer_size: 100
+  use_quantization: true  # 启用INT8量化
+
+web:
+  host: "0.0.0.0"
+  port: 8080
+  debug: false
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  max_bytes: 5242880   # 5MB
+  backup_count: 3

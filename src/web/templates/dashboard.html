@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge-IDS 实时监控</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🛡️ Edge-IDS 实时入侵检测系统</h1>
+                <div class="header-info">
+                    <span id="platform">检测中...</span>
+                    <span class="separator">|</span>
+                    <span id="system-status" class="status-stopped">停止</span>
+                    <span class="separator">|</span>
+                    <span id="uptime">运行时间: 0s</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 统计卡片 -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="packets">0</div>
+                <div class="stat-label">捕获数据包</div>
+                <div class="stat-sub" id="packets-dropped">丢弃: 0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="flows">0</div>
+                <div class="stat-label">分析流数</div>
+                <div class="stat-sub" id="flows-active">活跃: 0</div>
+            </div>
+            <div class="stat-card alert">
+                <div class="stat-value" id="attacks">0</div>
+                <div class="stat-label">检测攻击</div>
+                <div class="stat-sub" id="attacks-total">总计: 0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-value" id="latency">0ms</div>
+                <div class="stat-label">平均延迟</div>
+                <div class="stat-sub" id="latency-max">最大: 0ms</div>
+            </div>
+        </section>
+
+        <!-- 资源使用 -->
+        <section class="resources-section">
+            <h2>系统资源</h2>
+            <div class="resources-grid">
+                <div class="resource-item">
+                    <div class="resource-label">CPU</div>
+                    <div class="resource-bar">
+                        <div class="resource-fill" id="cpu-bar" style="width: 0%"></div>
+                    </div>
+                    <div class="resource-value" id="cpu-value">0%</div>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-label">内存</div>
+                    <div class="resource-bar">
+                        <div class="resource-fill" id="memory-bar" style="width: 0%"></div>
+                    </div>
+                    <div class="resource-value" id="memory-value">0%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 控制按钮 -->
+        <section class="control-section">
+            <button id="btn-start" class="btn btn-primary" onclick="startDetection()">
+                ▶️ 开始检测
+            </button>
+            <button id="btn-stop" class="btn btn-danger" onclick="stopDetection()" disabled>
+                ⏹️ 停止检测
+            </button>
+        </section>
+
+        <!-- 系统信息 -->
+        <section class="info-section">
+            <h2>系统信息</h2>
+            <div class="info-grid" id="system-info">
+                <div class="info-item">
+                    <span class="info-label">平台:</span>
+                    <span class="info-value" id="info-platform">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">处理器:</span>
+                    <span class="info-value" id="info-processor">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">系统:</span>
+                    <span class="info-value" id="info-system">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Python:</span>
+                    <span class="info-value" id="info-python">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">CPU核心:</span>
+                    <span class="info-value" id="info-cpu">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">内存:</span>
+                    <span class="info-value" id="info-memory">-</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>Edge-IDS v1.0.0 | 基于TCN的轻量级边缘入侵检测系统</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

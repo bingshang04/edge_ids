@@ -1,0 +1,415 @@
+2026-04-02 18:22:47 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 18:22:47 | INFO     | __main__ |    平台: x86_pc
+2026-04-02 18:22:47 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 18:22:47 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 18:22:47 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 18:22:47 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 18:22:47 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 18:22:47 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 18:22:47 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 18:22:47 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 18:22:47 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 18:22:47 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 18:22:47 | WARNING  | __main__ | Web仪表盘不可用，请安装flask: pip install flask flask-cors
+2026-04-02 18:22:47 | INFO     | __main__ | 开始实时捕获流量 → eth0
+2026-04-02 18:22:47 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 18:22:47 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 18:22:47 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 18:22:47 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 18:22:47 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 18:22:47 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 18:23:05 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 18:23:05 | INFO     | __main__ | 正在停止检测...
+2026-04-02 18:23:05 | INFO     | __main__ | 检测已停止
+2026-04-02 18:23:05 | INFO     | __main__ | ==================================================
+2026-04-02 18:23:05 | INFO     | __main__ | 运行统计
+2026-04-02 18:23:05 | INFO     | __main__ | ==================================================
+2026-04-02 18:23:05 | INFO     | __main__ | 运行时间: 17.2秒
+2026-04-02 18:23:05 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 18:23:05 | INFO     | __main__ | 分析流数: 0
+2026-04-02 18:23:05 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 18:23:05 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 18:23:05 | INFO     | __main__ | ==================================================
+2026-04-02 18:23:05 | INFO     | __main__ | 系统已关闭
+2026-04-02 18:25:22 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 18:25:22 | INFO     | __main__ |    平台: x86_pc
+2026-04-02 18:25:22 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 18:25:22 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 18:25:22 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 18:25:22 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 18:25:22 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 18:25:22 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 18:25:22 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 18:25:22 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 18:25:22 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 18:25:22 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 18:25:22 | WARNING  | __main__ | Web仪表盘不可用，请安装flask: pip install flask flask-cors
+2026-04-02 18:25:22 | INFO     | __main__ | 开始实时捕获流量 → eth0
+2026-04-02 18:25:22 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 18:25:22 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 18:25:22 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 18:25:22 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 18:25:22 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 18:25:22 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 18:46:44 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 18:46:44 | INFO     | __main__ | 正在停止检测...
+2026-04-02 18:46:44 | INFO     | __main__ | 检测已停止
+2026-04-02 18:46:44 | INFO     | __main__ | ==================================================
+2026-04-02 18:46:44 | INFO     | __main__ | 运行统计
+2026-04-02 18:46:44 | INFO     | __main__ | ==================================================
+2026-04-02 18:46:44 | INFO     | __main__ | 运行时间: 21分22秒
+2026-04-02 18:46:44 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 18:46:44 | INFO     | __main__ | 分析流数: 0
+2026-04-02 18:46:44 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 18:46:44 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 18:46:44 | INFO     | __main__ | ==================================================
+2026-04-02 18:46:44 | INFO     | __main__ | 系统已关闭
+2026-04-02 18:52:24 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 18:52:24 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 18:52:24 | INFO     | __main__ |    平台: windows
+2026-04-02 18:52:24 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 18:52:24 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 18:52:24 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 18:52:24 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 18:52:24 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 18:52:24 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 18:52:24 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 18:52:24 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 18:52:24 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 18:52:24 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 18:52:24 | INFO     | __main__ | 正在启动Web仪表盘...
+2026-04-02 18:52:24 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 18:52:24 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 18:52:24 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 18:52:24 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 18:52:24 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 18:52:24 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 18:52:24 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 18:52:24 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 18:52:24 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 18:52:24 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 18:52:24 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 18:52:42 | ERROR    | src.web.dashboard | Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "H:\IDS\edge_ids_refactored\src\web\dashboard.py", line 107, in index
+    return render_template('dashboard.html')
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+  File "E:\miniconda3\envs\edge-ids\lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: dashboard.html
+2026-04-02 18:54:50 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 18:54:50 | INFO     | __main__ | 正在停止检测...
+2026-04-02 18:54:50 | INFO     | __main__ | 检测已停止
+2026-04-02 18:54:50 | INFO     | __main__ | ==================================================
+2026-04-02 18:54:50 | INFO     | __main__ | 运行统计
+2026-04-02 18:54:50 | INFO     | __main__ | ==================================================
+2026-04-02 18:54:50 | INFO     | __main__ | 运行时间: 2分26秒
+2026-04-02 18:54:50 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 18:54:50 | INFO     | __main__ | 分析流数: 0
+2026-04-02 18:54:50 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 18:54:50 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 18:54:50 | INFO     | __main__ | ==================================================
+2026-04-02 18:54:50 | INFO     | __main__ | 系统已关闭
+2026-04-02 18:54:57 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 18:54:57 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 18:54:57 | INFO     | __main__ |    平台: windows
+2026-04-02 18:54:57 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 18:54:57 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 18:54:57 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 18:54:57 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 18:54:57 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 18:54:57 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 18:54:57 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 18:54:57 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 18:54:57 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 18:54:57 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 18:54:57 | INFO     | __main__ | 正在启动Web仪表盘...
+2026-04-02 18:54:57 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 18:54:57 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 18:54:57 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 18:54:57 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 18:54:57 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 18:54:57 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 18:54:57 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 18:54:57 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 18:54:57 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 18:54:57 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 18:54:57 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 19:00:49 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 19:00:49 | INFO     | __main__ | 正在停止检测...
+2026-04-02 19:00:49 | INFO     | __main__ | 检测已停止
+2026-04-02 19:00:49 | INFO     | __main__ | ==================================================
+2026-04-02 19:00:49 | INFO     | __main__ | 运行统计
+2026-04-02 19:00:49 | INFO     | __main__ | ==================================================
+2026-04-02 19:00:49 | INFO     | __main__ | 运行时间: 5分51秒
+2026-04-02 19:00:49 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 19:00:49 | INFO     | __main__ | 分析流数: 0
+2026-04-02 19:00:49 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 19:00:49 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 19:00:49 | INFO     | __main__ | ==================================================
+2026-04-02 19:00:49 | INFO     | __main__ | 系统已关闭
+2026-04-02 19:01:01 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 19:01:01 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:01:01 | INFO     | __main__ |    平台: windows
+2026-04-02 19:01:01 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:01:01 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 19:01:01 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:01:01 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:01:01 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:01:01 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:01:01 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:01:01 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:01:01 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:01:01 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:01:01 | INFO     | __main__ | 使用指定网络接口: WLAN
+2026-04-02 19:01:01 | INFO     | __main__ | 正在启动Web仪表盘...
+2026-04-02 19:01:01 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:01:01 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:01:01 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:01:01 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:01:01 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:01:01 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 19:01:01 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 19:01:01 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 19:01:01 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:01:01 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 19:01:01 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 19:02:16 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 19:02:16 | INFO     | __main__ | 正在停止检测...
+2026-04-02 19:02:16 | INFO     | __main__ | 检测已停止
+2026-04-02 19:02:16 | INFO     | __main__ | ==================================================
+2026-04-02 19:02:16 | INFO     | __main__ | 运行统计
+2026-04-02 19:02:16 | INFO     | __main__ | ==================================================
+2026-04-02 19:02:16 | INFO     | __main__ | 运行时间: 1分15秒
+2026-04-02 19:02:16 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 19:02:16 | INFO     | __main__ | 分析流数: 0
+2026-04-02 19:02:16 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 19:02:16 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 19:02:16 | INFO     | __main__ | ==================================================
+2026-04-02 19:02:16 | INFO     | __main__ | 系统已关闭
+2026-04-02 19:02:23 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 19:02:23 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:02:23 | INFO     | __main__ |    平台: windows
+2026-04-02 19:02:23 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:02:23 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 19:02:23 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:02:23 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:02:23 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:02:23 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:02:23 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:02:23 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:02:23 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:02:23 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:02:23 | INFO     | __main__ | 使用指定网络接口: WLAN
+2026-04-02 19:02:23 | INFO     | __main__ | 正在启动Web仪表盘...
+2026-04-02 19:02:23 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:02:23 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:02:23 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:02:23 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:02:23 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:02:23 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 19:02:23 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 19:02:23 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 19:02:23 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:02:23 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 19:02:23 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 19:03:09 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 19:03:09 | INFO     | __main__ | 正在停止检测...
+2026-04-02 19:03:09 | INFO     | __main__ | 检测已停止
+2026-04-02 19:03:09 | INFO     | __main__ | ==================================================
+2026-04-02 19:03:09 | INFO     | __main__ | 运行统计
+2026-04-02 19:03:09 | INFO     | __main__ | ==================================================
+2026-04-02 19:03:09 | INFO     | __main__ | 运行时间: 46.2秒
+2026-04-02 19:03:09 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 19:03:09 | INFO     | __main__ | 分析流数: 0
+2026-04-02 19:03:09 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 19:03:09 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 19:03:09 | INFO     | __main__ | ==================================================
+2026-04-02 19:03:09 | INFO     | __main__ | 系统已关闭
+2026-04-02 19:03:15 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成
+2026-04-02 19:03:15 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:03:15 | INFO     | __main__ |    平台: windows
+2026-04-02 19:03:15 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:03:15 | INFO     | __main__ | ✅ 数据包捕获器初始化完成
+2026-04-02 19:03:15 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:03:15 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:03:15 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:03:15 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:03:15 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:03:15 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:03:15 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:03:15 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:03:15 | INFO     | __main__ | 使用指定网络接口: WLAN
+2026-04-02 19:03:15 | INFO     | __main__ | 正在启动Web仪表盘...
+2026-04-02 19:03:15 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:03:15 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:03:15 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:03:15 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:03:15 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:03:15 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 19:03:15 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 19:03:15 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 19:03:15 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:03:15 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 19:03:15 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 19:03:19 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:03:50 | INFO     | __main__ | 正在停止检测...
+2026-04-02 19:03:50 | INFO     | __main__ | 检测已停止
+2026-04-02 19:03:54 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:03:54 | INFO     | src.capture.packet_capture.PacketCapture | Starting live capture on eth0...
+2026-04-02 19:03:54 | INFO     | src.capture.packet_capture.PacketCapture |   BPF filter: ip
+2026-04-02 19:03:54 | INFO     | src.capture.packet_capture.PacketCapture |   Packet count: unlimited
+2026-04-02 19:03:54 | ERROR    | src.capture.packet_capture.PacketCapture | Capture error: Interface 'eth0' not found !
+2026-04-02 19:03:54 | INFO     | src.capture.packet_capture.PacketCapture | Capture stopped
+2026-04-02 19:05:43 | INFO     | __main__ | 正在停止检测...
+2026-04-02 19:05:43 | INFO     | __main__ | 检测已停止
+2026-04-02 19:24:54 | INFO     | __main__ | 正在关闭Edge-IDS系统...
+2026-04-02 19:24:54 | INFO     | __main__ | ==================================================
+2026-04-02 19:24:54 | INFO     | __main__ | 运行统计
+2026-04-02 19:24:54 | INFO     | __main__ | ==================================================
+2026-04-02 19:24:54 | INFO     | __main__ | 运行时间: 20分59秒
+2026-04-02 19:24:54 | INFO     | __main__ | 处理数据包: 0
+2026-04-02 19:24:54 | INFO     | __main__ | 分析流数: 0
+2026-04-02 19:24:54 | INFO     | __main__ | 检测攻击: 0
+2026-04-02 19:24:54 | INFO     | __main__ | 平均延迟: 0.00ms
+2026-04-02 19:24:54 | INFO     | __main__ | ==================================================
+2026-04-02 19:24:54 | INFO     | __main__ | 系统已关闭
+2026-04-02 19:25:00 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:25:00 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成 | 平台: windows
+2026-04-02 19:25:00 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:25:00 | INFO     | __main__ | 🔍 自动检测到网络接口 → WLAN
+2026-04-02 19:25:00 | INFO     | src.capture.packet_capture.PacketCapture | PacketCapture 初始化完成 → 接口: WLAN | 平台: Windows
+2026-04-02 19:25:00 | INFO     | __main__ | ✅ 数据包捕获器初始化完成 → 接口: WLAN
+2026-04-02 19:25:00 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:25:00 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:25:00 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:25:00 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:25:00 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:25:00 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:25:00 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:25:00 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:25:00 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:25:00 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:25:00 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:25:00 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:25:00 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:25:00 | INFO     | __main__ | 系统已关闭
+2026-04-02 19:25:49 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:25:49 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成 | 平台: windows
+2026-04-02 19:25:49 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:25:50 | INFO     | __main__ | 🔍 自动检测到网络接口 → WLAN
+2026-04-02 19:25:50 | INFO     | src.capture.packet_capture.PacketCapture | PacketCapture 初始化完成 → 接口: WLAN
+2026-04-02 19:25:50 | INFO     | __main__ | ✅ 数据包捕获器初始化完成 → 接口: WLAN
+2026-04-02 19:25:50 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:25:50 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:25:50 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:25:50 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:25:50 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:25:50 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:25:50 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:25:50 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:25:50 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:25:50 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:25:50 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:25:50 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:25:50 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:25:50 | INFO     | src.capture.packet_capture.PacketCapture | 开始实时捕获 → WLAN
+2026-04-02 19:25:50 | ERROR    | src.capture.packet_capture.PacketCapture | 捕获错误: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2026-04-02 19:25:50 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:30:00 | INFO     | __main__ | 正在停止检测...
+2026-04-02 19:30:00 | INFO     | __main__ | 系统已关闭
+2026-04-02 19:31:31 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:31:31 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成 | 平台: windows
+2026-04-02 19:31:31 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:31:31 | INFO     | __main__ | 🔍 自动检测到网络接口 → WLAN
+2026-04-02 19:31:31 | INFO     | src.capture.packet_capture.PacketCapture | Windows 环境已切换到 Layer 3 抓包模式
+2026-04-02 19:31:31 | INFO     | src.capture.packet_capture.PacketCapture | PacketCapture 初始化完成 → 接口: WLAN
+2026-04-02 19:31:31 | INFO     | __main__ | ✅ 数据包捕获器初始化完成 → 接口: WLAN
+2026-04-02 19:31:31 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:31:31 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:31:31 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:31:31 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:31:31 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:31:31 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:31:31 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:31:31 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:31:31 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:31:31 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:31:31 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:31:31 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:31:31 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:31:31 | INFO     | src.capture.packet_capture.PacketCapture | 🚀 开始实时抓包 → WLAN
+2026-04-02 19:31:31 | ERROR    | src.capture.packet_capture.PacketCapture | 抓包错误: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2026-04-02 19:31:31 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:31:31 | INFO     | src.capture.packet_capture.PacketCapture | 抓包已停止
+2026-04-02 19:33:40 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:33:40 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成 | 平台: windows
+2026-04-02 19:33:40 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:33:40 | INFO     | __main__ | 🔍 自动检测到网络接口 → WLAN
+2026-04-02 19:33:40 | INFO     | src.capture.packet_capture.PacketCapture | Windows 环境已切换到 Layer 3 抓包模式
+2026-04-02 19:33:40 | INFO     | src.capture.packet_capture.PacketCapture | PacketCapture 初始化完成 → 接口: WLAN
+2026-04-02 19:33:40 | INFO     | __main__ | ✅ 数据包捕获器初始化完成 → 接口: WLAN
+2026-04-02 19:33:40 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:33:40 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:33:40 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:33:40 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:33:40 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:33:40 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:33:40 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:33:40 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:33:40 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:33:40 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:33:40 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:33:40 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:33:40 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:33:40 | INFO     | src.capture.packet_capture.PacketCapture | 🚀 开始实时抓包 → WLAN
+2026-04-02 19:33:40 | ERROR    | src.capture.packet_capture.PacketCapture | 抓包错误: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2026-04-02 19:33:40 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:33:40 | INFO     | src.capture.packet_capture.PacketCapture | 抓包已停止
+2026-04-02 19:42:21 | INFO     | src.utils.platform_info.PlatformDetector | Detected platform: windows
+2026-04-02 19:42:21 | INFO     | __main__ | 🚀 Edge-IDS v1.0 初始化完成 | 平台: windows
+2026-04-02 19:42:21 | INFO     | __main__ | 正在初始化组件...
+2026-04-02 19:42:21 | INFO     | __main__ | 🔍 自动检测到网络接口 → WLAN
+2026-04-02 19:42:21 | INFO     | src.capture.packet_capture.PacketCapture | Windows 环境已切换到 Layer 3 抓包模式
+2026-04-02 19:42:21 | INFO     | src.capture.packet_capture.PacketCapture | PacketCapture 初始化完成 → 接口: WLAN
+2026-04-02 19:42:21 | INFO     | __main__ | ✅ 数据包捕获器初始化完成 → 接口: WLAN
+2026-04-02 19:42:21 | INFO     | __main__ | ✅ 特征提取器初始化完成
+2026-04-02 19:42:21 | INFO     | src.inference.detector.IDSDetector | Using CPU device
+2026-04-02 19:42:21 | INFO     | src.models.tcn_model.TCN | TCN initialized: 0.40M parameters
+2026-04-02 19:42:21 | INFO     | src.models.tcn_model.TCN |   Architecture: [128, 256]
+2026-04-02 19:42:21 | WARNING  | src.inference.detector.IDSDetector | Model file not found: data\models\tcn_model_3.0.pth
+2026-04-02 19:42:21 | INFO     | src.inference.detector.IDSDetector | Using untrained model
+2026-04-02 19:42:21 | INFO     | src.inference.detector.IDSDetector | IDSDetector initialized: device=cpu
+2026-04-02 19:42:21 | INFO     | __main__ | ✅ 检测器初始化完成
+2026-04-02 19:42:21 | INFO     | src.web.dashboard.DashboardServer | DashboardServer initialized: 0.0.0.0:8080
+2026-04-02 19:42:21 | INFO     | src.web.dashboard.DashboardServer | Starting dashboard server on http://0.0.0.0:8080
+2026-04-02 19:42:21 | INFO     | src.web.dashboard.DashboardServer | Dashboard server started in background thread
+2026-04-02 19:42:21 | INFO     | __main__ | ✅ Web仪表盘已启动: http://0.0.0.0:8080
+2026-04-02 19:42:21 | INFO     | __main__ | 开始实时捕获流量 → WLAN
+2026-04-02 19:42:21 | INFO     | src.capture.packet_capture.PacketCapture | 🚀 开始实时抓包 → WLAN
+2026-04-02 19:42:21 | ERROR    | src.capture.packet_capture.PacketCapture | 抓包错误: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2026-04-02 19:42:21 | INFO     | __main__ | 系统运行中，按 Ctrl+C 停止...
+2026-04-02 19:42:21 | INFO     | src.capture.packet_capture.PacketCapture | 抓包已停止
+2026-04-02 20:00:33 | INFO     | __main__ | 正在停止检测...
+2026-04-02 20:00:33 | INFO     | __main__ | 系统已关闭

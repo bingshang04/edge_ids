@@ -1,0 +1,19 @@
+# Edge-IDS 依赖包 - PC版本（x86/x64）
+# 包含完整的PyTorch支持
+
+# 基础依赖
+-r requirements.txt
+
+# PyTorch（CPU版本）
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 可选：CUDA支持（如果有NVIDIA显卡）
+# 安装命令: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# TensorFlow（可选）
+tensorflow>=2.12.0
+
+# ONNX导出支持（可选）
+onnx>=1.14.0
+onnxruntime>=1.15.0
