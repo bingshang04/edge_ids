@@ -1,0 +1,19 @@
+# Edge-IDS 依赖包 - 树莓派版本（ARM）
+# 针对ARM架构优化的轻量级依赖
+
+# 基础依赖
+-r requirements.txt
+
+# PyTorch（ARM版本）
+# 树莓派需要从源码编译或使用预编译的ARM版本
+# 安装命令: pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+# 或者使用社区提供的ARM预编译包
+torch>=2.0.0
+torchvision>=0.15.0
+
+# TFLite运行时（树莓派优化）
+tflite-runtime>=2.13.0
+
+# 性能优化库（可选）
+# onnxruntime 可能不支持ARM，需要测试

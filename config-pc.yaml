@@ -1,0 +1,46 @@
+# Edge-IDS PC版本配置文件
+# 针对x86/x64电脑的优化配置
+
+system:
+  name: "Edge-IDS-PC"
+  version: "1.0.0"
+
+capture:
+  interface: "eth0"
+  bpf_filter: "ip"
+  buffer_size: 65536
+  promiscuous: true
+  queue_size: 10000
+
+features:
+  flow_timeout: 120.0
+  max_flows: 10000
+  feature_dim: 39
+  packet_history_size: 1000
+  iat_history_size: 100
+
+model:
+  input_dim: 39
+  num_classes: 2
+  num_channels: [128, 256, 512]  # PC可以使用更深的网络
+  kernel_size: 3
+  dropout: 0.2
+  model_path: "data/models/tcn_model_3.0.pth"
+
+inference:
+  confidence_threshold: 0.5
+  alert_threshold: 0.8
+  sequence_length: 20  # PC可以使用更长的序列
+  batch_size: 64
+  buffer_size: 100
+
+web:
+  host: "0.0.0.0"
+  port: 8080
+  debug: false
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  max_bytes: 10485760
+  backup_count: 5
