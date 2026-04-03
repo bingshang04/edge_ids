@@ -1,0 +1,4 @@
+﻿data/datasets/
+__pycache__/
+*.pyc
+src/**/__pycache__/
