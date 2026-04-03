@@ -20,10 +20,10 @@ features:
   iat_history_size: 100
 
 model:
-  input_dim: 39
+  input_dim: 48
   num_classes: 2
-  num_channels: [128, 256, 512]  # PC可以使用更深的网络
-  kernel_size: 3
+  num_channels: [128, 256, 256]  # PC可以使用更深的网络
+  kernel_size: 5
   dropout: 0.2
   model_path: "data/models/tcn_model_3.0.pth"
 

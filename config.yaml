@@ -24,10 +24,10 @@ features:
 
 # 模型配置
 model:
-  input_dim: 39            # 输入特征维度
+  input_dim: 48            # 输入特征维度
   num_classes: 2           # 输出类别数
-  num_channels: [128, 256] # TCN通道数
-  kernel_size: 3           # 卷积核大小
+  num_channels: [128, 256, 256] # TCN通道数
+  kernel_size: 5           # 卷积核大小
   dropout: 0.2             # Dropout概率
   model_path: "data/models/tcn_model_3.0.pth"  # 模型文件路径
 
