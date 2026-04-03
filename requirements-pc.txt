@@ -1,5 +1,4 @@
 # Edge-IDS 依赖包 - PC版本（x86/x64）
-# 包含完整的PyTorch支持
 
 # 基础依赖
 -r requirements.txt
